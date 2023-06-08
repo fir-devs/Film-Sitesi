@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<he<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERA PALAS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+ <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: poppins;
+        box-sizing: border-box;
+        
+      }
+    body{
+      
+      background-color: black;
+       overflow-x: hidden;
+    }
+    .video-container{
+    
+      padding: 0px 00px 10px 50px;
+    position: relative;
+    margin: 0px 0px 0px 50px;
+    }
+  
+    .content-box p{
+      padding-left: 160px;
+      font-size: 0.9rem;
+      color: hsl(0, 43%, 97%);
+    }
+    .content-title{
+      color: white;
+      padding: 25px;
+      margin-left: 120px;
+    }
+    .content-icon {
+      padding-left: 80px;
+      color: #f9d71c;
+    }
+    .content-icon p{
+      padding-left: 90px;
+      color: white;
+    }
+    
+    a{
+        text-decoration: none;
+      }
+     #testimonials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px 0px 0px 50px;
+        width: 100%;
+      }
+      
+
+      .testimonial-box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+      }
+      .testimonial-box-title{
+        position: relative;
+        margin-left: 640px;
+       padding-top: 50px;
+       font-size: 30px;
+       color: white;
+      
+      }
+      .testimonial-box{
+        width: 600px;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+        background-color: white;
+        padding: 10px;
+        margin: 15px 15px;
+        cursor: pointer;
+       float: left;
+       margin-left:70px;
+        
+        
+      }
+      .profile-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+      }
+      .profile-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      .profile{
+        display: flex;
+        align-items: center;
+      }
+      .name-user{
+        display: flex;
+        flex-direction: column;
+
+      }
+      .name-user strong{
+        color: #3d3d3d;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+
+      }
+
+      .name-user span{
+        color: #979797;
+        font-size: 0.8rem;
+      }
+      .reviews{
+        color: #f9d71c;
+      }
+      .box-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        
+      }
+      .client-comment p{
+        font-size: 0.9rem;
+        color: #4b4b4b;
+      }
+      .testimonial-box:hover{
+        transform: translateY(-10px);
+        transition: all ease 0.3s;
+      }
+     @media(max-width:1060px){
+      .testimonial-box{
+        width: 35%;
+        padding: 10px;
+
+      }
+     }
+     @media(max-width:790px){
+      .testimonial-box{
+        width: 40%;
+        
+     }
+    }
+     @media(max-width:340px){
+      .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+      .reviews{
+        margin-top: 10px;
+      }
+     }
+::selection{
+  color: white;
+  background-color: rgb(62, 62, 224);
+}
+
+</style>
+</head>
+<body>
+    
+ 
+<!-- navbar start -->
+ <div class="navbar">
+  <div class="navbar-wrapper">
+    <div class="logo-wrapper">
+      <h1 class="logo">NETFLIX</h1>
+    </div>
+    <div class="menu-container">
+      <ul class="menu-list">
+          <li class="menu-list-item active">
+              <a href="index.html" >Ana Sayfa </a></li>
+            <li class="menu-list-item"> 
+              <a href="film.html" >Filmler </a></li>
+            <li class="menu-list-item">
+              <a href="dizi.html" >Diziler </a></li>
+            <li class="menu-list-item">
+              <a href="liste.html" >Listem</a></li>
+            <li class="menu-list-item">
+              <a href="popüler.html" >Popüler </a></li>
+      </ul>
+    </div>
+    <div class="search_user">
+      <input type="text" placeholder="Search.." id="search_input">
+    <div class="search">
+    <ul>
+     <li>
+    <a href="#" class="card">
+
+      <img src="img/d1(1).jpg" alt=""> 
+       <div class="cont">
+         <h3>Pera Palas</h3>
+         <h6>Drama,2022 <span>IMDB</span><i class="bi bi-star-fill"></i>7.6</h6>
+       </div>
+     </a>
+   </li>
+   <li>
+     <a href="#" class="card">
+       <img src="img/d14(1).jpg" alt=""> 
+       <div class="cont">
+         <h3>SquidGame</h3>
+         <h6>Gerilim,2021 <span>IMDB</span><i class="bi bi-star-fill"></i>9.5</h6>
+       </div>
+     </a>
+   </li>
+   <li> 
+     <a href="#" class="card">
+        <img src="img/d17(1).jpg" alt=""> 
+       <div class="cont">
+         <h3>Stranger Things</h3>
+         <h6>Bilim Kurgu,2018 <span>IMDB</span><i class="bi bi-star-fill"></i>5.3</h6>
+       </div>
+     </a>
+   </li>
+   <li>
+     <a href="#" class="card">
+        <img src="img/f1(1).jpg" alt=""> 
+       <div class="cont">
+         <h3>Spiderman</h3>
+          <h6>Macera,2019 <span>IMDB</span><i class="bi bi-star-fill"></i>7.6</h6>
+       </div>
+     </a>
+   </li>
+   <li>
+     <a href="#" class="card">
+        <img src="img/d20(1).jpg" alt="">
+       <div class="cont">
+         <h3>Wednesday</h3>
+         <h6>Fanstastik,2004 <span>IMDB</span><i class="bi bi-star-fill"></i>7.1</h6>
+       </div>
+     </a>
+   </li>
+   <li>
+     <a href="#" class="card">
+        <img src="img/d19(1).jpg" alt=""> 
+       <div class="cont">
+         <h3>Kuş Uçuşu</h3>
+         <h6>Drama,2022 <span>IMDB</span><i class="bi bi-star-fill"></i>8.2</h6>
+       </div>
+     </a>
+   </li>
+   </ul>
+    </div>
+    </div>
+   <div class="profile-container">
+     <a href="profil.html">
+     <img class="profile-picture" src="img/p13.jpg" alt="" /></a>
+    
+     <div class="profile-text-container">
+      <a href="profil.html">
+       <span class="profile-text">Hesabım</span>
+       <i class="bi bi-caret-down-fill"></i></a>
+     </div>
+      <div class="toggle">
+        <i class="bi bi-moon-fill toggle-icon"></i>
+        <i class="bi bi-brightness-high-fill toggle-icon"></i>
+        <div class="toggle-ball"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- navbar end-->
+
+ <!-- sidebar start -->
+    <div class="sidebar">
+      <a href="index.html" class="bi bi-house-door-fill"></a>
+      <a href= "liste.html" class="bi bi-bookmarks-fill"></a>
+      <a href="https://instagram.com" class="bi bi-instagram"></a>
+      <a href="https://facebook.com" class="bi bi-facebook"></a>
+      <a href="https://twitter.com" class="bi bi-twitter"></a>
+      <a href="giris.html"  class="bi bi-x-circle-fill"></a>
+    </div>
+ <!-- sidebar end -->
+
+ <div class="video-container">
+    <video   width="90%" height=" 30%" controls> 
+       <source src="video/perapalas.mp4" >
+    </video>
+</div>
+   
+<div class="content-box">
+
+    <h1 class="content-title">PERA PALAS</h1>
+   
+      <div class="content-icon">
+  <p> IMDB &nbsp 8
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="far fa-star"></i>
+  </p>
+   </div>
+   <p >
+  
+  <br>
+  2022 |1 Sezon | Drama
+  Tarihî Pera Palas Oteli ile ilgili bir yazı hazırlarken kendini bir anda geçmişte bulan gazeteci Esra, <br>Türkiye'nin kaderini değiştirebilecek bir komployu durdurmalıdır.<br>
+  Oyuncular: Hazal Kaya,Tansu Biçer,Selahattin Paşalı</p>
+  </div>
+  <section id="testimonials">
+ 
+    <!--testimonials-box-container-->
+    <div class="--testimonial-box-container">
+      <h1 class="testimonial-box-title">YORUMLAR</h1>
+      <!--box 1-->
+      <div class="testimonial-box">
+        <!--top-->
+        <div class="box-top">
+          <!--profile-->
+          <div class="profile">
+            <!--img-->
+            <div class="profile-img">
+              <img src="img/p1.jpg" alt="">
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Ela Nur</strong>
+              <span>@ela_nr</span>
+            </div>
+          </div>
+          <!--reviews-->
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--empty star-->
+            <i class="far fa-star"></i>
+            
+          </div>
+        </div>
+        <!--Comments------>
+        <div class="client-comment">
+          <p>İzlediğim en harika Netflix Türk dizisi. Evdeki bütün işleri bıraktım ve bir gün de bitirdim. Ikinci sezonu iple çekiyorum. Tüm akraba arkadaşlara tavsiye ettim. Herkes izlediğine kesinlikle pişman değil. Senaryo ve oyunculuklar muhteşem. Sizi ayakta alkışlıyorum 👏👏👏</p>
+        </div>
+   </div>
+  
+     <!--box 2-->
+       <div class="testimonial-box">
+        <!--top-->
+        <div class="box-top">
+          <!--profile-->
+          <div class="profile">
+            <!--img-->
+            <div class="profile-img">
+              <img src="img/p5.jpg" alt="">
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Alican</strong>
+              <span>@ali_cn</span>
+            </div>
+          </div>
+          <!--reviews-->
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><!--empty star-->
+          </div>
+        </div>
+        <!--Comments------>
+        <div class="client-comment">
+          <p>Gözümüzü kırpmadan seyrettik. Başta Hazal  Kaya'nın ve tüm oyuncuların performansını alkışlıyorum. Zamanda yolculuk flimlerinde  genelikle kahraman ilk gidişte bir şaşkınlık yaşar ancak daha sonra hikaye akmaya başlar ve  artık hiç şaşırmaz ,sanki  kahraman hep  o çağda yaşamış gibidir.</p>
+        </div>
+      </div>
+  
+     <!--box 3-->
+      <div class="testimonial-box">
+        <!--top-->
+        <div class="box-top">
+          <!--profile-->
+          <div class="profile">
+            <!--img-->
+            <div class="profile-img">
+              <img src="img/p2.jpg" alt="">
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Firdevs</strong>
+              <span>@_firdevs_</span>
+            </div>
+          </div>
+          <!--reviews-->
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i><!--empty star-->
+          </div>
+        </div>
+        <!--Comments------>
+        <div class="client-comment">
+          <p>Normalde çok nadir yorum yaparım. Bu dizi izlediğim en mantıklı senaryolardan birisiydi. Seyirci aptal yerine konulmamış, her bölümde apayrı bir gizem vardı. Öylesine kendine has bir hikaye ki, tahmin edebilmeniz mümkün değil.</p>
+        </div>
+      </div>
+  
+    <!--box 4-->
+      <div class="testimonial-box">
+        <!--top-->
+        <div class="box-top">
+          <!--profile-->
+          <div class="profile">
+            <!--img-->
+            <div class="profile-img">
+              <img src="img/p6.jpg" alt="">
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Çağlar</strong>
+              <span>@caglaar_</span>
+            </div>
+          </div>
+          <!--reviews-->
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <!--Comments------>
+        <div class="client-comment">
+          <p>DİZİ ÇOOK İYİ bi günde bitirdim inanılmaz sarıyor ve asla sıkmıyor dizinin olay örgüsünde her şeyin birbiriyle bağlantılı olup böyle taşların yerine oturması, gizem, tarih, dram, fantastik.. Bunların birleşimi çok güzel olmuş. Uzun zaman sonra ilk kez bir Türk dizisini beğendim 🤝</p>
+        </div>
+      </div>
+       <!--box 5-->
+       <div class="testimonial-box">
+        <!--top-->
+        <div class="box-top">
+          <!--profile-->
+          <div class="profile">
+            <!--img-->
+            <div class="profile-img">
+              <img src="img/p7.jpg" alt="">
+            </div>
+            <!--name-and-username-->
+            <div class="name-user">
+              <strong>Mert</strong>
+              <span>@-mert-</span>
+            </div>
+          </div>
+          <!--reviews-->
+          <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><!--empty star-->
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+           
+          </div>
+        </div>
+        <!--Comments------>
+        <div class="client-comment">
+          <p>
+        
+            Şöyle güzel bir diziyi de hakaret boyutunda eleştiren insanlar ne izliyor merak ediyorum doğrusu. Bence Türk yapımı olarak çekilen en başarılı dizilerden. Oyuncuları ve bu projeyi yazan, çeken, bu projede emeği geçen herkesi tebrik ederim.</p>
+        </div>  
+   </div>
+    <!--box 6-->
+    <div class="testimonial-box">
+      <!--top-->
+      <div class="box-top">
+        <!--profile-->
+        <div class="profile">
+          <!--img-->
+          <div class="profile-img">
+            <img src="img/p3.jpg" alt="">
+          </div>
+          <!--name-and-username-->
+          <div class="name-user">
+            <strong>Elif Ece</strong>
+            <span>@elif_ece</span>
+          </div>
+        </div>
+        <!--reviews-->
+        <div class="reviews">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><!--empty star-->
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          
+        </div>
+      </div>
+      <!--Comments------>
+      <div class="client-comment">
+        <p>Muhteşem diziyi ikinci kez izliyorum, sıra dışı bir çalışma!!! Bravo herkes kendi rolünde, Netflix'in büyük projelere bahis yapması çok hoşuma gitti ve tabii ki Hazal Kaya'ya zaten ihtiyaç vardı.Herkes öyle harika, ne güzel bir iş, eşsiz bir akıcılığa sahip enfes sahneler, dram sizi sıkmıyor</p>
+      </div>
+  </div>
+     </div>
+  </section>
+   
+<script src="script.js"></script> 
+</body>
+</html>
